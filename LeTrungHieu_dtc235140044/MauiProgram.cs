@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+using LeTrungHieu_dtc235140044.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace LeTrungHieu_dtc235140044
 {
@@ -16,8 +17,11 @@ namespace LeTrungHieu_dtc235140044
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
 
             return builder.Build();
         }
