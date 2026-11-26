@@ -14,8 +14,9 @@
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
             <Label
-                Text="Hello, World!"
+                Text="Hello, ICTU!"
                 Style="{StaticResource Headline}"
+                FontSize="32"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
